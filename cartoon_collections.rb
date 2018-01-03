@@ -16,5 +16,13 @@ end
 def find_the_cheese(collection)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  collection.include?(cheese_types)
+  if collection.include? (cheese_types[0])
+    cheese_types[0]
+  elsif collection.include? (cheese_types[1])
+    cheese_types[1]
+  elsif collection.include? (cheese_types[2])
+    cheese_types[2]
+  else
+    nil
+  end
 end
