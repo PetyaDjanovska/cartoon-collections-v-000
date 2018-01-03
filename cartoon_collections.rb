@@ -8,8 +8,9 @@ def summon_captain_planet(collection)# code an argument here
   collection.map {|item| "#{item.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls (collection)# code an argument here
   # Your code here
+  collection.any? { |call| call.length > 4 }
 end
 
 def find_the_cheese# code an argument here
